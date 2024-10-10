@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Warung Seblak Mantul</h1>
+        <p>Nikmati seblak dengan berbagai level pedas yang menggoyang lidah!</p>
+    </header>
+
+    <section id="promo">
+        <h2>Promo Hari Ini.</h2>
+        <p id="promoMessage">Klik tombol di bawah unu untuk melihat promo special hari ini.</p>
+        <button onclick="tampilkanPromo()">Lihat Promo</button>
+        <button onclick="purchaseConfrim()">Beli</button>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Seblak Favorit</h2>
+        <ul id="listMenu">
+            <!-- daftar akan ditampilkan oleh js -->
+        </ul>
+        <button onclick="tampilkanMenu()">Tampilkan Menu</button>
+    </section>
+
+    <section id="order">
+        <h2>Pesan Seblak</h2>
+        <p>Pilih menu dan masukan julah pesanan:</p>
+        <label for="pilihMenu">Menu Seblak:</label>
+        <select name="menu" id="pilihMenu">
+            <!-- pilihan menu diisi oleh js -->
+        </select> <br><br>
+        <label for="inputJumlah">Jumlah:</label>
+        <input type="number" name="jumlah" id="inputJumlah" placeholder="jumlah pesanan">
+        <br><br>
+        <button onclick="cekPesanan()">Pesan Sekarang</button>
+        <p id="hasilPesanan"></p>
+        <p id="idBayar"></p>
+
+
+        <h3>Pembayaran</h3>
+        <label for="uangBayar">Jumlah Uang Dibayar:</label>
+        <input type="number" name="uangBayar" id="uangBayar" placeholder="masukan jumlah uang"> <br><br>
+        <button onclick="hitungKembalian()">Hitung Kembalian</button>
+        <p id="hasilKembalian"></p>
+    </section>
+
+    <footer>
+        <p>&copy;2024 Warung Seblak Mantul. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+
+</html>
