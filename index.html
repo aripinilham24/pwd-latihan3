@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
@@ -15,44 +18,51 @@
         <p>Nikmati seblak dengan berbagai level pedas yang menggoyang lidah!</p>
     </header>
 
-    <section id="promo">
-        <h2>Promo Hari Ini.</h2>
-        <p id="promoMessage">Klik tombol di bawah unu untuk melihat promo special hari ini.</p>
-        <button onclick="tampilkanPromo()">Lihat Promo</button>
-    </section>
+    <main>
+        <section id="promo">
+            <h2>Promo Hari Ini.</h2>
+            <p id="promoMessage">Klik tombol di bawah unu untuk melihat promo special hari ini.</p>
+            <button onclick="tampilkanPromo()">Lihat Promo</button>
+        </section>
 
-    <section id="menu">
-        <h2>Menu Seblak Favorit</h2>
-        <ul id="listMenu">
-            <!-- daftar akan ditampilkan oleh js -->
-        </ul>
-        <button onclick="tampilkanMenu()">Tampilkan Menu</button>
-    </section>
+        <section id="menu">
+            <h2>Menu Seblak Favorit</h2>
+            <ul id="listMenu">
+                <!-- daftar akan ditampilkan oleh js -->
+            </ul>
+            <button onclick="tampilkanMenu()">Tampilkan Menu</button>
+        </section>
 
-    <section id="order">
-        <h2>Pesan Seblak</h2>
-        <p>Pilih menu dan masukan julah pesanan:</p>
-        <label for="pilihMenu">Menu Seblak:</label>
-        <select name="menu" id="pilihMenu">
-            <!-- pilihan menu diisi oleh js -->
-        </select> <br><br>
-        <label for="inputJumlah">Jumlah:</label>
-        <input type="number" name="jumlah" id="inputJumlah" placeholder="jumlah pesanan">
-        <br><br>
-        <button onclick="cekPesanan()">Pesan Sekarang</button>
-        <p id="hasilPesanan"></p>
-        <p id="idBayar"></p>
+        <section id="order">
+            <h2>Pesan Seblak</h2>
+            <p>Pilih menu dan masukan julah pesanan:</p>
+            <label for="pilihMenu">Menu Seblak:</label>
+            <select name="menu" id="pilihMenu">
+                <!-- pilihan menu diisi oleh js -->
+            </select> <br><br>
+            <label for="inputJumlah">Jumlah:</label>
+            <input type="number" name="jumlah" id="inputJumlah" placeholder="jumlah pesanan">
+            <br><br>
+            <button onclick="cekPesanan()">Pesan Sekarang</button>
+            <p id="hasilPesanan"></p>
+            <p id="idBayar"></p>
 
 
-        <h3>Pembayaran</h3>
-        <label for="uangBayar">Jumlah Uang Dibayar:</label>
-        <input type="number" name="uangBayar" id="uangBayar" placeholder="masukan jumlah uang"> <br><br>
-        <button onclick="hitungKembalian()">Hitung Kembalian</button>
-        <p id="hasilKembalian"></p>
-    </section>
+            <h3>Pembayaran</h3>
+            <label for="uangBayar">Jumlah Uang Dibayar:</label>
+            <input type="number" name="uangBayar" id="uangBayar" placeholder="masukan jumlah uang"> <br><br>
+            <button onclick="hitungKembalian()">Hitung Kembalian</button>
+            <p id="hasilKembalian"></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy;2024 Warung Seblak Mantul. Semua Hak Dilindungi.</p>
+        <div>
+            <a href="https://web.whatsapp.com/083896794622" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/muhamadarifinilham24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Arifin.Ilham.007" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
     </footer>
 </body>
 

@@ -68,6 +68,12 @@ function cekPesanan() {
     let jumlah = document.getElementById("inputJumlah").value;
     let hasil = '';
     let total = 0;
+
+    // cek jumlah pesanan
+    if(jumlah<1) {
+        alert("Jumlah pesanan tidak boleh kurang dari satu.");
+    }
+
     // Validasi jumlah pesanan
     if (jumlah > 20) {
     hasil = "Pesanan terlalu banyak! Maksimal 20 porsi.";
