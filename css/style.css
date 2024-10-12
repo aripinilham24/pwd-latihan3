@@ -64,13 +64,21 @@ h2 {
     margin-bottom: 10px;
 }
 
+h3 {
+    margin: 10px 0 5px;
+}
+
+input, select {
+    margin-top: 2px;
+}
+
 button {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #C40C0C;
     color: #FFC100;
     margin: 10px 0 10px 0;
-    border:2px solid transparent;
+    border: 2px solid transparent;
     cursor: pointer;
     font-weight: 600;
     width: 100%;
@@ -79,9 +87,10 @@ button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 button:hover {
-    border:2px solid #FFC100;
-    background-color: #f9f9f9 ;
+    border: 2px solid #FFC100;
+    background-color: #f9f9f9;
     color: #C40C0C;
 }
 
@@ -115,6 +124,7 @@ footer a:hover {
         padding: 10px 20px;
     }
 }
+
 @media screen and (max-width: 992px) {
     main {
         padding: 10px 40px;

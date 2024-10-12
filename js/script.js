@@ -74,12 +74,13 @@ function cekPesanan() {
         alert("Jumlah pesanan tidak boleh kurang dari satu.");
     }
 
-    // Validasi jumlah pesanan
+    // memastikan pesanan tidak kosong
     if (jumlah > 20) {
     hasil = "Pesanan terlalu banyak! Maksimal 20 porsi.";
     } else if (jumlah >= 1 && jumlah <= 20) {
     let menuPilihan = menuFavorit[menuIndex];
     let hargaPerItem = menuPilihan.harga;
+
     // Cek apakah menu memiliki diskon
     if (menuPilihan.diskon) {
     hargaPerItem *= 0.75; // Diskon 25%
@@ -94,8 +95,8 @@ function cekPesanan() {
     }
     document.getElementById("hasilPesanan").innerHTML = hasil;
     }
+
     // Fungsi untuk menghitung kembalian
-    
     function hitungKembalian() {
     let uangBayar = document.getElementById("uangBayar").value;
     let kembalian = uangBayar - totalHargaSetelahDiskon;
